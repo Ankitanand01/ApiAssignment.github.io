@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(23, 64, 99);
+}
+body,html{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+}
+.box {   
+    width: 25%;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 5px;
+}
+
+.image img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: 5px solid;
+}
+
+.title {  
+    padding: 10px;
+    font-size: x-large;
+}
+.email{
+    padding: 10px;
+    font-size: large;
+}
+.mobile{
+    padding: 10px;
+    font-size: large;
+}
+.dateofbirth{
+    padding: 8px;
+    font-size: large;
+}
+.button {
+	justify-content: center;
+}
+
+button {
+	background-color: rgb(23, 64, 99);
+	border: 0;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 18px;
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+
+button:hover{
+    color:rgb(23, 64, 99);
+    background-color: white;
+    border: 2px solid rgb(23, 64, 99);
+    cursor: pointer;
+    transition: 0.5s;
+}
+@media screen and (max-width: 600px) {
+    .box {   
+        width: 100%;
+        box-shadow: 2px 2px 20px black;
+        border-radius: 5px;
+    }
+  }
+@media screen and (max-width: 950px) and (min-width: 601px) {
+    .box {   
+        width: 50%;
+        box-shadow: 2px 2px 20px black;
+        border-radius: 5px;
+    }
+  }
